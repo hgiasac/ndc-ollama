@@ -1,0 +1,15 @@
+packagingDefinition:
+  type: PrebuiltDockerImage
+  dockerImage: ghcr.io/hgiasac/ndc-ollama:{{VERSION}}
+supportedEnvironmentVariables:
+  - OLLAMA_SERVER_URL
+  - OLLAMA_TIMEOUT
+  - OLLAMA_RETRY_TIMES
+  - OLLAMA_RETRY_DELAY
+  - OLLAMA_RETRY_HTTP_STATUS
+commands: {}
+dockerComposeWatch:
+  # copy config files into the existing container and restart it
+  - path: ./config
+    target: /etc/connector
+    action: sync+restart

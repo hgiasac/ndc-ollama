@@ -1,0 +1,19 @@
+{
+  "operation_results": [
+    {
+      "type": "procedure",
+      "result": {
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 10,
+        "message": {
+          "content": "Hello! How can I assist you today?",
+          "images": null,
+          "role": "assistant"
+        },
+        "model": "qwen2:0.5b-instruct-q4_0",
+        "prompt_eval_count": 21
+      }
+    }
+  ]
+}
